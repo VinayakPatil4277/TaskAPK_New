@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:gravity="center_vertical">
+
+    <!-- 1) Edit icon (matches header sort‐arrow width: 48dp) -->
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_edit"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Edit"/>
+
+    <!-- 2) Delete icon (also 48dp) -->
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_delete"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete"/>
+
+    <!-- 3) Login User ID (120dp) -->
+    <TextView
+        android:id="@+id/tvLoginId"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="prashantd"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- 4) यूजर नाव (140dp) -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Prashant Doifode"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- 5) मोबाइल क्रमांक (120dp) -->
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="9604082080"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- 6) टॅक्स नंबर (100dp) -->
+    <TextView
+        android:id="@+id/tvTaxNo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="NA"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- 7) Tab Enable switch (100dp) -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/tbTabEnable"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <!-- 8) OTP Verify switch (100dp) -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/tbOtpVerify"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <!-- 9) Is Active switch (100dp) -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/tbIsActive"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <!-- 10) Page Permissions gear icon (120dp) -->
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:foregroundGravity="center">
+        <ImageButton
+            android:id="@+id/btnPermissions"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_settings"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Permissions"/>
+    </FrameLayout>
+</LinearLayout>

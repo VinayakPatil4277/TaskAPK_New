@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 1) Blue header bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:title="सुधारित यूजर"
+            android:titleTextColor="@color/colorPrimary"
+            app:titleCentered="true"/>
+
+        <!-- 2) Form container -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/formBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <!-- 2-column table for labels & inputs -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="1"
+                        android:stretchColumns="1">
+
+                        <!-- Login User ID -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="Login User ID"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etLogin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- यूजर नाव -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="यूजर नाव"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- पत्ता -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="पत्ता"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- संपर्क क्रमांक -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="संपर्क क्रमांक"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etContact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="phone"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- मोबाईल क्रमांक -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="मोबाईल क्रमांक"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="phone"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                        <!-- E-Mail ID -->
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="E-Mail ID"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textEmailAddress"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <!-- Toggles row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@color/formBackground"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OTP Verify"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginEnd="8dp"/>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/swOtpVerify"
+                            android:layout_width="48dp"
+                            android:layout_height="24dp"
+                            android:checked="true"
+                            android:showText="false"
+                            app:trackTint="@color/switch_track_otp"
+                            app:thumbTint="@color/white"
+                            app:trackCornerRadius="12dp"
+                            android:layout_marginEnd="32dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tab"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginEnd="8dp"/>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/swTab"
+                            android:layout_width="48dp"
+                            android:layout_height="24dp"
+                            android:checked="false"
+                            android:showText="false"
+                            app:trackTint="@color/switch_track_tab"
+                            app:thumbTint="@color/white"
+                            app:trackCornerRadius="12dp" />
+                    </LinearLayout>
+
+
+
+
+                    <!-- User-Level dropdown -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="1"
+                        android:stretchColumns="1">
+
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="यूजर लेव्हल"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerLevel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- Remarks -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="1"
+                        android:stretchColumns="1">
+
+                        <TableRow android:layout_marginBottom="12dp">
+                            <TextView
+                                style="@style/FormLabel"
+                                android:text="टिप्‍पणी"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etRemarks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <!-- Is Active -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            style="@style/FormLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Is Active"
+                            android:layout_marginEnd="8dp" />
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/swIsActive"
+                            android:layout_width="48dp"
+                            android:layout_height="24dp"
+                            android:showText="false"
+                            android:switchMinWidth="48dp"
+                            android:switchPadding="0dp"
+                            app:trackCornerRadius="12dp" />
+                    </LinearLayout>
+
+
+                    <!-- Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        android:spacing="8dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnModify"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Modify"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/btnModify"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnClose"
+                            style="@style/Widget.Material3.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="8dp"
+                            android:text="Close"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/btnClose"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </ScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_edit"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Edit"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_delete"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete"/>
+
+    <TextView
+        android:id="@+id/tvLoginId"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="prashantd"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Prashant Doifode"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="9604082080"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTaxNo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="NA"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ToggleButton
+            android:id="@+id/tbTabEnable"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ToggleButton
+            android:id="@+id/tbOtpVerify"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ToggleButton
+            android:id="@+id/tbIsActive"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_bg"
+            android:button="@null"
+            android:padding="0dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:foregroundGravity="center">
+        <ImageButton
+            android:id="@+id/btnPermissions"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_settings"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Permissions"/>
+    </FrameLayout>
+</LinearLayout>

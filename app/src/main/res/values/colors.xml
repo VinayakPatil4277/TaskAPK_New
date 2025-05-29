@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--  Header background  -->
+    <color name="colorPrimary">#3F51B5</color>
+    <!--  a deep indigo-blue  -->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--  slightly darker for status bar  -->
+    <!--  Accent for buttons, toggles, etc.  -->
+    <color name="colorAccent">#FF4081</color>
+    <!--  bright pink accent  -->
+    <!--  Utility  -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--  Buttons  -->
+    <color name="btnModify">#388E3C</color>
+    <!--  dark green  -->
+    <color name="btnClose">#D32F2F</color>
+    <!--  dark red  -->
+    <color name="formBackground">#EEF1FA</color>
+    <color name="purple_otp">#9C27B0</color>
+    <!--  or your exact purple shade  -->
+    <color name="gray_switch_track">#DDDDDD</color>
+</resources>
