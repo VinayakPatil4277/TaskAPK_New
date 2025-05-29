@@ -191,3 +191,10 @@ For any questions or suggestions, feel free to reach out:
 
 GitHub: Vinayak Patil
 Email: patildvinayak@gmail.com
+
+
+
+
+![taskss3](https://github.com/user-attachments/assets/b5458272-469b-45e6-8199-16cf9cf19a8d)
+![taskss2](https://github.com/user-attachments/assets/1b0f1bb9-85c1-43b9-9e9b-7b297261a014)
+![taskSs1](https://github.com/user-attachments/assets/1c286e3e-a12e-4a6a-923b-635942e154b5)
